@@ -16,7 +16,7 @@ function create(wrapperID, parent, width, height ) {
 /*	cntxt.fillStyle = color;
 	cntxt.fillRect(0,0, width, height);
 */
-	return {ctx: cntxt, id : parentClass }
+	return {ctx: cntxt, id : wrapperID }
 }
 
 function createReportList(wrapperID) {
