@@ -1,11 +1,9 @@
-import {name, draw, reportArea, reportPerimeter} from './modules/square.js';
-import {create, createReportList} from './modules/canvas.js';
+import {name, draw, reportArea, reportPerimeter} as Square from './modules/square.js';
+import {create, createReportList} as Canvas from './modules/canvas.js';
 
-let myCanvas = create('myCanvas', document.body, 480, 320);
-console.log('myCanvas.id: ',myCanvas.id);
-let reportList = createReportList(myCanvas.id);
-console.log('reportList: ', reportList);
+let myCanvas = Canvas.create('myCanvas', document.body, 480, 320);
+let reportList = Canvas.createReportList(myCanvas.id);
 
-let square1 = draw(myCanvas.ctx, 50, 50, 100, 'blue');
-reportArea(square1.length, reportList);
-reportPerimeter(square1.length, reportList);
+let square1 = Square.draw(myCanvas.ctx, 50, 75, 100, 'blue');
+Square.reportArea(square1.length, reportList);
+Sqaure.reportPerimeter(square1.length, reportList);
