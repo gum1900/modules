@@ -24,4 +24,4 @@ function reportPerimeter(listID, length) {
 	}
 }
 
-export {name, draw, reportArea, reportPerimeter);
+export {name, draw, reportArea, reportPerimeter};
