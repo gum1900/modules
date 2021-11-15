@@ -6,7 +6,7 @@ function draw(ctx, length, x, y, color) {
 	return {length: length, x: x, y: y, color: color};
 }
 
-function reportArea(listID, length) {
+function reportArea(length, listID) {
 	let list = document.querySelector("ul#" + listID);
 	if(list) {
 		let li = document.createElement("li");
@@ -15,7 +15,7 @@ function reportArea(listID, length) {
 	}
 }
 
-function reportPerimeter(listID, length) {
+function reportPerimeter(length, listID) {
 	let list = document.querySelector("ul#" + listID);
 	if(list) {
 		let li = document.createElement("li");
