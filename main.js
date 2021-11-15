@@ -6,4 +6,4 @@ let reportList = Canvas.createReportList(myCanvas.id);
 
 let square1 = Square.draw(myCanvas.ctx, 50, 75, 100, 'blue');
 Square.reportArea(square1.length, reportList);
-Sqaure.reportPerimeter(square1.length, reportList);
+Square.reportPerimeter(square1.length, reportList);
