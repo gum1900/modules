@@ -3,7 +3,7 @@ class Square {
     let ctx, length, x, y, color;
 */
     constructor(ctx, length, x, y, color) {
-        {this.ctx, this.length, this.x, this.y, this.color} = {ctx, length, x, y, color};
+        this.ctx = ctx, this.length = length, this.x = x, this.y = y, this.color = color; 
     }
 
 
