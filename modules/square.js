@@ -1,10 +1,10 @@
 class Square {
 /*    const name = 'square';
-*/
     let ctx, length, x, y, color;
     constructor(ctx, length, x, y, color) {
         {this.ctx, this.length, this.x. this.y, this.color} = {ctx, length, x, y, color};
     }
+*/
 
     function draw() {
         ctx.fillStyle = color;
