@@ -7,13 +7,13 @@ class Square {
     }
 
 
-    function draw() {
+    draw() {
         ctx.fillStyle = color;
         ctx.fillRect(x, y, length, length);
         return {length: length, x: x, y: y, color: color};
     }
 
-    function reportArea(length, listID) {
+    static reportArea(length, listID) {
         let list = document.querySelector("ul#" + listID);
         if(list) {
             let li = document.createElement("li");
@@ -22,7 +22,7 @@ class Square {
         }
     }
 
-    function reportPerimeter(length, listID) {
+    static reportPerimeter(length, listID) {
         let list = document.querySelector("ul#" + listID);
         if(list) {
             let li = document.createElement("li");
