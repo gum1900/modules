@@ -9,7 +9,7 @@ class Square {
 
     draw() {
         this.ctx.fillStyle = this.color;
-        ctx.fillRect(this.x, this.y, this.length, this.length);
+        this.ctx.fillRect(this.x, this.y, this.length, this.length);
         return {length: this.length, x: this.x, y: this.y, color: this.color};
     }
 
